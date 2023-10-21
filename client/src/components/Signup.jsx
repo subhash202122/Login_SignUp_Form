@@ -22,7 +22,7 @@ function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/users/register', formData);
+      const response = await axios.post('https://login-signup2-i8vx.onrender.com/api/users/register', formData);
       if (response.status === 201) {
         setMessage('Signup successful. You can now log in.');
         //setMessage('Signup failed. Please check your data.');
